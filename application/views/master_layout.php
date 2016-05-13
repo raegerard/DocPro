@@ -40,8 +40,7 @@
 		<!-- CUSTOM CSS -->
 		<link href='<?php echo base_url(); ?>assets/css/blank.css' rel='stylesheet' type='text/css'>
 		<link href='<?php echo base_url(); ?>assets/css/navbar-sidebar.css' rel='stylesheet' type='text/css'>
-		
-		 <link rel="stylesheet" type="text/css" href="../dist/pivot.css">
+
 		<style>
 			.popover{
 				margin-left: -5px !important;
@@ -641,15 +640,6 @@
 			});
 		</script>
 		<script src="<?php echo base_url(); ?>libs/angular/angular.min.js"></script>
-		
-		        <!-- external libs from cdnjs -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-
-        <!-- PivotTable.js libs from ../dist -->
-       
-        <script type="text/javascript" src="<?php echo base_url(); ?>libs/pivot/dist/pivot.js"></script>
-        <script type="text/javascript" src="<?php echo base_url(); ?>libs/pivot/dist/export_renderers.js"></script>
 		
 		<?php if(isset($footer_js)){ $this->load->view($footer_js); } ?>
 	</body>
