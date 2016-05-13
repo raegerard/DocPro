@@ -40,7 +40,7 @@
 									<i class="fa fa-times icon"></i>
 								</button>
 								<li class="dropdown" id='logout-btn' style='float: right;'>
-									<a href='<?php base_url(); ?>/logout' id='label-logout'>
+									<a href='<?php echo base_url(); ?>/logout' id='label-logout'>
 										<span class="hint--bottom" data-hint="Logout"><i class='fa fa-power-off'></i></span>
 									</a>
 								</li>

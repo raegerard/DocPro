@@ -32,8 +32,26 @@
 				<h4 class='modal-title'>Add</h4>
 			</div>
 			<form action='#' method='post'>
+				<input type='text' style='border: none; float: right; width: 40px; margin-right: 150px; padding-top: 10px;'>
+				<label style='float: right; padding-top: 10px;'>Sequence: </label>
 				<div class='modal-body'>
-				
+					<table width='80%'>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px;'><label>Code</label></td>
+							<td style='padding-top: 10px;'><input class='form-control' type='text' name=''></td>
+						</tr>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px;'><label>Name</label></td>
+							<td style='padding-top: 10px;'><input class='form-control' type='text' name=''></td>
+						</tr>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px;'><label>Shortname</label></td>
+							<td style='padding-top: 10px;'><input class='form-control' type='text' name=''></td>
+						</tr>
+					</table>
+				</div>
+				<div class='modal-footer'>
+					<button class='btn btn-primary btn-sm' type='submit' style='float: left;'>Ok</button>
 				</div>
 			</form>
 		</div>

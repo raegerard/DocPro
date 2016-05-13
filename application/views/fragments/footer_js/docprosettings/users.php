@@ -1,7 +1,7 @@
 <script>
 	$(document).ready(function(){
 		$('#users-table').DataTable({
-			columnDefs: [{targets: 0, width: '1px'}, {targets: 3, width: '100px'}],
+			columnDefs: [{targets: 0, width: '1px'}, {targets: 4, width: '100px'}],
 		});
 		
 		$('#add').click(function(){

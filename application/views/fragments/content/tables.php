@@ -5,7 +5,7 @@
 				<div class='title'>Tables</div>
 			</div>
 		</div>
-		<div class='card-body button-group-custom'>
+		<div class='card-body'>
 			<div class='row'>
 				<a href='<?php echo base_url(); ?>tables/value_added_tax' class='col-md-3 col-xs-3 col-sm-3 title-hover' style='background-image: url("assets/img/background.png"); background-size: cover; padding: 20px; border: 1px solid #E5E5E5; background-color: #000; color: #000;'>
 					<h4 style="text-align: center;">Value Added Tax</h4>

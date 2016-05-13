@@ -32,7 +32,36 @@
 			</div>
 			<form action='#' method='post'>
 				<div class='modal-body'>
-				
+					<table width='80%'>
+						<tr>
+							<td style='text-align: right; padding-right: 10px;'><label>Name</label></td>
+							<td><input class='form-control' type='text' name=''></td>
+						</tr>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px;'><label>Username</label></td>
+							<td style='padding-top: 10px; width: 270px;'><input class='form-control' type='text' name=''></td>
+						</tr>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px;'><label>Password</label></td>
+							<td style='padding-top: 10px;'><input class='form-control' type='text' name=''></td>
+						</tr>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px;'><label>Company</label></td>
+							<td style='padding-top: 10px;'><input class='form-control' type='text' name=''></td>
+						</tr>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px;'><label>Access Level</label></td>
+							<td style='padding-top: 10px;'>
+								<select class='form-control' name=''>
+									<option value='Super Admin'>Admin</option>
+									<option value='Super Admin'>User</option>
+								</select>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class='modal-footer'>
+					<button class='btn btn-primary' type='submit' style='float: left;'>Ok</button>
 				</div>
 			</form>
 		</div>
@@ -48,7 +77,36 @@
 			</div>
 			<form action='#' method='post'>
 				<div class='modal-body'>
-				
+					<table width='80%'>
+						<tr>
+							<td style='text-align: right; padding-right: 10px;'><label>Name</label></td>
+							<td><input class='form-control' type='text' name=''></td>
+						</tr>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px;'><label>Username</label></td>
+							<td style='padding-top: 10px; width: 270px;'><input class='form-control' type='text' name=''></td>
+						</tr>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px;'><label>Password</label></td>
+							<td style='padding-top: 10px;'><input class='form-control' type='text' name=''></td>
+						</tr>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px;'><label>Company</label></td>
+							<td style='padding-top: 10px;'><input class='form-control' type='text' name=''></td>
+						</tr>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px;'><label>Access Level</label></td>
+							<td style='padding-top: 10px;'>
+								<select class='form-control' name=''>
+									<option value='Super Admin'>Admin</option>
+									<option value='Super Admin'>User</option>
+								</select>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class='modal-footer'>
+					<button class='btn btn-primary' type='submit' style='float: left;'>Ok</button>
 				</div>
 			</form>
 		</div>
@@ -64,7 +122,36 @@
 			</div>
 			<form action='#' method='post'>
 				<div class='modal-body'>
-				
+					<table width='80%'>
+						<tr>
+							<td style='text-align: right; padding-right: 10px;'><label>Name</label></td>
+							<td><input class='form-control' type='text' name=''></td>
+						</tr>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px;'><label>Username</label></td>
+							<td style='padding-top: 10px; width: 270px;'><input class='form-control' type='text' name=''></td>
+						</tr>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px;'><label>Password</label></td>
+							<td style='padding-top: 10px;'><input class='form-control' type='text' name=''></td>
+						</tr>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px;'><label>Company</label></td>
+							<td style='padding-top: 10px;'><input class='form-control' type='text' name=''></td>
+						</tr>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px;'><label>Access Level</label></td>
+							<td style='padding-top: 10px;'>
+								<select class='form-control' name=''>
+									<option value='Super Admin'>Admin</option>
+									<option value='Super Admin'>User</option>
+								</select>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class='modal-footer'>
+					<button class='btn btn-primary' type='submit' style='float: left;'>Ok</button>
 				</div>
 			</form>
 		</div>

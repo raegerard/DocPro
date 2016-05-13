@@ -33,7 +33,32 @@
 			</div>
 			<form action='#' method='post'>
 				<div class='modal-body'>
-				
+					<input type='text' style='border: none; float: right; width: 40px; margin-right: 130px;'>
+					<label style='float: right;'>Sequence: </label>
+					<table width='80%'>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px; width: 150px;'><label>Name</label></td>
+							<td colspan='3' style='padding-top: 10px;'><input class='form-control' type='text' name=''></td>
+						</tr>
+						<tr>
+							<td style='float: right; padding-right: 10px; padding-top: 10px;'><label>Code</label></td>
+							<td style=' padding-top: 10px; padding-right: 10px; width: 140px;'><input class='form-control' type='text' name=''></td>
+							<td style='padding-top: 15px; text-align: right; padding-right: 5px;'><label>Short Name</label></td>
+							<td style='padding-top: 10px; width:80px;'><input class='form-control' type='text' name=''></td>
+						</tr>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px; width: 150px;'><label>Payment Type</label></td>
+							<td colspan='3' style='padding-top: 10px;'>
+								<select class='form-control' name=''>
+									<option value='cash'>Cash</option>
+									<option value='credit'>Credit</option>
+								</select>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class='modal-footer'>
+					<button class='btn btn-primary' type='submit' style='float: left;'>Ok</button>
 				</div>
 			</form>
 		</div>
@@ -49,7 +74,32 @@
 			</div>
 			<form action='#' method='post'>
 				<div class='modal-body'>
-				
+					<input type='text' style='border: none; float: right; width: 40px; margin-right: 130px;'>
+					<label style='float: right;'>Sequence: </label>
+					<table width='80%'>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px; width: 150px;'><label>Name</label></td>
+							<td colspan='3' style='padding-top: 10px;'><input class='form-control' type='text' name=''></td>
+						</tr>
+						<tr>
+							<td style='float: right; padding-right: 10px; padding-top: 10px;'><label>Code</label></td>
+							<td style=' padding-top: 10px; padding-right: 10px; width: 140px;'><input class='form-control' type='text' name=''></td>
+							<td style='padding-top: 15px; text-align: right; padding-right: 5px;'><label>Short Name</label></td>
+							<td style='padding-top: 10px; width:80px;'><input class='form-control' type='text' name=''></td>
+						</tr>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px; width: 150px;'><label>Payment Type</label></td>
+							<td colspan='3' style='padding-top: 10px;'>
+								<select class='form-control' name=''>
+									<option value='cash'>Cash</option>
+									<option value='credit'>Credit</option>
+								</select>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class='modal-footer'>
+					<button class='btn btn-primary' type='submit' style='float: left;'>Ok</button>
 				</div>
 			</form>
 		</div>
@@ -65,7 +115,32 @@
 			</div>
 			<form action='#' method='post'>
 				<div class='modal-body'>
-				
+					<input type='text' style='border: none; float: right; width: 40px; margin-right: 130px;'>
+					<label style='float: right;'>Sequence: </label>
+					<table width='80%'>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px; width: 150px;'><label>Name</label></td>
+							<td colspan='3' style='padding-top: 10px;'><input class='form-control' type='text' name=''></td>
+						</tr>
+						<tr>
+							<td style='float: right; padding-right: 10px; padding-top: 10px;'><label>Code</label></td>
+							<td style=' padding-top: 10px; padding-right: 10px; width: 140px;'><input class='form-control' type='text' name=''></td>
+							<td style='padding-top: 15px; text-align: right; padding-right: 5px;'><label>Short Name</label></td>
+							<td style='padding-top: 10px; width:80px;'><input class='form-control' type='text' name=''></td>
+						</tr>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px; width: 150px;'><label>Payment Type</label></td>
+							<td colspan='3' style='padding-top: 10px;'>
+								<select class='form-control' name=''>
+									<option value='cash'>Cash</option>
+									<option value='credit'>Credit</option>
+								</select>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class='modal-footer'>
+					<button class='btn btn-primary' type='submit' style='float: left;'>Ok</button>
 				</div>
 			</form>
 		</div>

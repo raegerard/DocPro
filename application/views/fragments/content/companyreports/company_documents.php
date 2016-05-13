@@ -3,7 +3,7 @@
 	<div class='card'>
 		<div class='card-header'>
 			<div class='card-title'>
-				<div class='title'>Company Docuuments</div>
+				<div class='title'>Company Documents</div>
 			</div>
 		</div>
 		<div class='card-body'>

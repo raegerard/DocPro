@@ -1,7 +1,7 @@
 <script>
 	$(document).ready(function(){
 		var table = $('#banks-table').DataTable({
-			columnDefs: [{targets: [0, 1, 3], width: '1px'}],
+			columnDefs: [{targets: [0, 1], width: '1px'}, {targets: 3, width: '100px'}],
 			scrollX: true,
 		});
 		

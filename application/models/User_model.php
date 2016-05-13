@@ -9,7 +9,7 @@ class User_model extends CI_Model {
 		$user = self::$db->get_where('user', array('username' => $username));
 		if($user->num_rows() > 0){
 	            $user = $user->result()[0];
-                    if(md5($password) == $user->password){
+                    if($password == $user->password){
                         return $user->user_id;
                     }
 		}

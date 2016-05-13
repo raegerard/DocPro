@@ -1,14 +1,14 @@
-<script type="text/javascript" src="<?php base_url(); ?>/libs/js/PieChart.js"></script>
-<script type="text/javascript" src="<?php base_url(); ?>/libs/js/BarChart.js"></script>
-<script type="text/javascript" src="<?php base_url(); ?>/libs/js/LineChart.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>/libs/js/PieChart.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>/libs/js/BarChart.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>/libs/js/LineChart.js"></script>
 			
-<script src="<?php base_url(); ?>/libs/sequence/scripts/imagesloaded.pkgd.min.js"></script>
-<script src="<?php base_url(); ?>/libs/sequence/scripts/hammer.min.js"></script>
-<script src="<?php base_url(); ?>/libs/sequence/scripts/sequence.min.js"></script>
-<script src="<?php base_url(); ?>/libs/sequence/scripts/sequence-theme.basic.js"></script>
+<script src="<?php echo base_url(); ?>/libs/sequence/scripts/imagesloaded.pkgd.min.js"></script>
+<script src="<?php echo base_url(); ?>/libs/sequence/scripts/hammer.min.js"></script>
+<script src="<?php echo base_url(); ?>/libs/sequence/scripts/sequence.min.js"></script>
+<script src="<?php echo base_url(); ?>/libs/sequence/scripts/sequence-theme.basic.js"></script>
 			
-<script src='<?php base_url(); ?>/libs/fullcalendar/lib/moment.min.js'></script>
-<script src='<?php base_url(); ?>/libs/fullcalendar/fullcalendar.min.js'></script>
+<script src='<?php echo base_url(); ?>/libs/fullcalendar/lib/moment.min.js'></script>
+<script src='<?php echo base_url(); ?>/libs/fullcalendar/fullcalendar.min.js'></script>
 	<script>
 		$(document).ready(function(){
 			$('#memo-table').DataTable({
@@ -42,7 +42,7 @@
 		});
 	</script>
 				
-	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<!--<script src="https://maps.googleapis.com/maps/api/js"></script>-->
 	<script>
 		function initialize() {
 			var myLatLng = {lat: 16.413684, lng: 120.596125};

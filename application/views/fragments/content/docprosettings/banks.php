@@ -32,7 +32,23 @@
 			</div>
 			<form action='#' method='post'>
 				<div class='modal-body'>
-				
+					<table width='80%'>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px;'><label>Code</label></td>
+							<td style='padding-top: 10px;'><input class='form-control' type='text' name=''></td>
+						</tr>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px;'><label>Name</label></td>
+							<td style='padding-top: 10px;'><input class='form-control' type='text' name=''></td>
+						</tr>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px;'><label>Short Name</label></td>
+							<td style='padding-top: 10px;'><input class='form-control' type='text' name=''></td>
+						</tr>
+					</table>
+				</div>
+				<div class='modal-footer'>
+					<button class='btn btn-primary' type='submit' style='float: left;'>Ok</button>
 				</div>
 			</form>
 		</div>

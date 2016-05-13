@@ -1,7 +1,7 @@
 <script>
 	$(document).ready(function(){
 		$('#discounts-table').DataTable({
-			columnDefs: [{targets: [0, 1, 3], width: '1px'}],
+			columnDefs: [{targets: [0, 1, 3], width: '100px'}],
 		});
 		
 		$('#add').click(function(){

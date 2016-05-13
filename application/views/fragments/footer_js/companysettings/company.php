@@ -19,8 +19,28 @@
 	
 	
 		//Codes Here!
-	
-	
+		
+		
+		$('div').on('click', '.select-option', function(){
+			$("input[name='classification']").val($(this)[0].textContent);
+		});
+		
+		$('.classification-btn').click(function(){
+			var options = {
+						animation: true,
+						placement: 'right',
+						html: true,
+						content: function(){
+								return $('#co-class-select').html();
+						}
+			}
+			$(this).popover(options);
+		});
+		
+		$("input:not(input[name='classification']), select").focus(function(){
+			$('.popover').hide();
+		});
+		
 		initButtonPrevention();
 	});
 	

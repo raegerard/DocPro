@@ -69,7 +69,6 @@ $route['docpro_settings/banks']											= 'Docpro_Settings/get_banks';
 $route['company_settings']												= 'Company_Settings/get_company_settings';
 $route['company_settings/company']										= 'Company_Settings/get_company';
 $route['company_settings/users']										= 'Company_Settings/get_users';
-$route['company_settings/journals']										= 'Company_Settings/get_journals';
 $route['company_settings/transactions']									= 'Company_Settings/get_transactions';
 $route['company_settings/documents']									= 'Company_Settings/get_documents';
 $route['company_settings/modes_of_payment']								= 'Company_Settings/get_modes_of_payment';

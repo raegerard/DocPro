@@ -1,4 +1,4 @@
-<script src='libs/angular/angular.min.js'></script>
+<script src='<?php echo base_url(); ?>/libs/angular/angular.min.js'></script>
 <script>
 	(function(){
 		$.fn.extend({

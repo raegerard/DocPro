@@ -7,7 +7,7 @@ class Financial_Reports extends MY_Controller{
 	}
 	
 	public function get_financial_reports(){
-		$this->load->view($this->layout, ['top_navbar'=>'fragments/top_navbar/global_top_navbar', 'head_css' => 'fragments/head_css/financial_reports', 'content'=>'fragments/content/financial_reports', 'back_button'=>'../home', 'active_nav'=>'financialreports']);
+		$this->load->view($this->layout, ['top_navbar'=>'fragments/top_navbar/global_top_navbar', 'head_css'=>'fragments/head_css/financial_reports', 'content'=>'fragments/content/financial_reports', 'back_button'=>'../home', 'active_nav'=>'financialreports']);
 	}
 
 	public function get_trial_balance(){

@@ -27,6 +27,34 @@
 		</div>
 	</div>
 </div>
+<div id='class-select' style='display: none;'>
+	<button class='btn btn-default class' type='button' style='width: 100%'>Company/Branch</button>
+	<button class='btn btn-default class' type='button' style='width: 100%'>Customer</button>
+	<button class='btn btn-default class' type='button' style='width: 100%'>Supplier-Ordinary Goods</button>
+	<button class='btn btn-default class' type='button' style='width: 100%'>Supplier-Capital Goods</button>
+	<button class='btn btn-default sclass' type='button' style='width: 100%'>Supplier-Other Goods</button>
+	<button class='btn btn-default class' type='button' style='width: 100%'>Supplier-Services</button>
+	<button class='btn btn-default class' type='button' style='width: 100%'>Related Party</button>
+	<button class='btn btn-default class' type='button' style='width: 100%'>Stockholder/Owner</button>
+	<button class='btn btn-default class' type='button' style='width: 100%'>Employee</button>
+	<button class='btn btn-default class' type='button' style='width: 100%'>Others</button>
+</div>
+
+<div id='bp-type-select' style='display: none;'>
+	<button class='btn btn-default bptype' type='button' style='width: 100%'>Individual</button>
+	<button class='btn btn-default bptype' type='button' style='width: 100%'>Non-Individual</button>
+	<button class='btn btn-default bptype' type='button' style='width: 100%'>Government</button>
+</div>
+
+<div id='tax-type-select' style='display: none;'>
+	<button class='btn btn-default taxtype' type='button' style='width: 100%'>Income Tax</button>
+	<button class='btn btn-default taxtype' type='button' style='width: 100%'>Value Added Tax</button>
+	<button class='btn btn-default taxtype' type='button' style='width: 100%'>Percentage Tax</button>
+	<button class='btn btn-default taxtype' type='button' style='width: 100%'>Excise Tax</button>
+	<button class='btn btn-default taxtype' type='button' style='width: 100%'>Expanded Withholding Tax</button>
+	<button class='btn btn-default taxtype' type='button' style='width: 100%'>Final Withholding Tax</button>
+	<button class='btn btn-default taxtype' type='button' style='width: 100%'>Special Tax</button>
+</div>
 
 <div id='add-modal' class='modal fade' role='dialog' tabindex='-1'>
 	<div class='modal-dialog'>
@@ -36,8 +64,57 @@
 				<h4 class='modal-title'>Add</h4>
 			</div>
 			<form action='#' method='post'>
+					<input type='text' style='border: none; float: right; width: 40px; margin-right: 150px; padding-top: 10px;'>
+					<label style='float: right; padding-top: 10px;'>Sequence: </label>
 				<div class='modal-body'>
-				
+					<table width='80%'>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px; width: 150px'><label>Code</label></td>
+							<td style='padding-top: 10px;'><input class='form-control' type='text' name=''></td>
+						</tr>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px;'><label>Name</label></td>
+							<td style='padding-top: 10px;'><input class='form-control' type='text' name=''></td>
+						</tr>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px;'><label>Address</label></td>
+							<td style='padding-top: 10px;'><input class='form-control' type='text' name=''></td>
+						</tr>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px; width: 200px;'><label>Classification</label></td>
+							<td style='padding-top: 10px;'>
+								<div class='input-group'>
+									<input class='form-control' type='text' name='classification' placeholder='Select...' readonly>
+									<span type='button' class='input-group-addon classification-btn'><i class='fa fa-caret-right'></i></span>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px; width: 200px;'><label>Type</label></td>
+							<td style='padding-top: 10px;'>
+								<div class='input-group'>
+									<input class='form-control' type='text' name='bp_type' placeholder='Select...' readonly>
+									<span type='button' class='input-group-addon bp-type-btn'><i class='fa fa-caret-right'></i></span>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px;'><label>TIN</label></td>
+							<td style='padding-top: 10px;'><input class='form-control' type='text' name=''></td>
+						</tr>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px; width: 200px;'><label>Tax Type</label></td>
+							<td style='padding-top: 10px;'>
+								<div class='input-group'>
+									<input class='form-control' type='text' name='tax_type' placeholder='Select...' readonly>
+									<span type='button' class='input-group-addon tax-type-btn'><i class='fa fa-caret-right'></i></span>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class='modal-footer'>
+					<button class='btn btn-primary btn-sm' type='submit' style='float: left;'>Ok</button>
 				</div>
 			</form>
 		</div>

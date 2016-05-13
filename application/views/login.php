@@ -31,7 +31,7 @@
 		background-position: center center;
 		margin: 0 auto;
 		display: table;
-	    background: url('<?php base_url(); ?>/assets/img/200x200.png');
+	    background: url('<?php echo base_url(); ?>/assets/img/200x200.png');
 		background-position: center;
 	}
 	

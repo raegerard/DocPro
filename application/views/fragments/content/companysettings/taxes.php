@@ -27,6 +27,16 @@
 	</div>
 </div>
 
+<div id='type-short-name-select' style='display: none;'>
+	<button class='btn btn-default short-name' type='button' style='width: 100%'>IT</button>
+	<button class='btn btn-default short-name' type='button' style='width: 100%'>VAT</button>
+	<button class='btn btn-default short-name' type='button' style='width: 100%'>PT</button>
+	<button class='btn btn-default short-name' type='button' style='width: 100%'>EXT</button>
+	<button class='btn btn-default short-name' type='button' style='width: 100%'>EWT</button>
+	<button class='btn btn-default short-name' type='button' style='width: 100%'>FWT</button>
+	<button class='btn btn-default short-name' type='button' style='width: 100%'>PR</button>
+</div>
+
 <div id='add-modal' class='modal fade' role='dialog' tabindex='-1'>
 	<div class='modal-dialog'>
 		<div class='modal-content'>
@@ -35,8 +45,43 @@
 				<h4 class='modal-title'>Add</h4>
 			</div>
 			<form action='#' method='post'>
+				<input type='text' style='border: none; float: right; width: 40px; margin-right: 150px; padding-top: 10px;'>
+				<label style='float: right; padding-top: 10px;'>Sequence: </label>
 				<div class='modal-body'>
-				
+					<table width='80%'>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px;'><label>Code</label></td>
+							<td style='padding-top: 10px;'><input class='form-control' type='text' name=''></td>
+						</tr>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px; width: 200px;'><label>Tax Type Short Name</label></td>
+							<td style='padding-top: 10px;'>
+								<div class='input-group'>
+									<input class='form-control' type='text' name='type_short_name' placeholder='Select...' readonly>
+									<span type='button' class='input-group-addon tax-type-btn'><i class='fa fa-caret-right'></i></span>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px;'><label>Name</label></td>
+							<td style='padding-top: 10px;'><input class='form-control' type='text' name=''></td>
+						</tr>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px;'><label>Short Name</label></td>
+							<td style='padding-top: 10px;'><input class='form-control' type='text' name=''></td>
+						</tr>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px;'><label>Rate</label></td>
+							<td style='padding-top: 10px;'><input class='form-control' type='text' name=''></td>
+						</tr>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px;'><label>Base</label></td>
+							<td style='padding-top: 10px;'><input class='form-control' type='text' name=''></td>
+						</tr>
+					</table>
+				</div>
+				<div class='modal-footer'>
+					<button class='btn btn-primary btn-sm' type='submit' style='float: left;'>Ok</button>
 				</div>
 			</form>
 		</div>
@@ -51,8 +96,38 @@
 				<h4 class='modal-title'>Edit</h4>
 			</div>
 			<form action='#' method='post'>
+				<input type='text' style='border: none; float: right; width: 40px; margin-right: 150px; padding-top: 10px;'>
+				<label style='float: right; padding-top: 10px;'>Sequence: </label>
 				<div class='modal-body'>
-				
+					<table width='80%'>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px;'><label>Code</label></td>
+							<td style='padding-top: 10px;'><input class='form-control' type='text' name=''></td>
+						</tr>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px;'><label>Tax Type Short Name</label></td>
+							<td style='padding-top: 10px;'><input class='form-control' type='text' name='type_short_name' readonly></td>
+						</tr>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px;'><label>Name</label></td>
+							<td style='padding-top: 10px;'><input class='form-control' type='text' name=''></td>
+						</tr>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px;'><label>Short Name</label></td>
+							<td style='padding-top: 10px;'><input class='form-control' type='text' name=''></td>
+						</tr>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px;'><label>Rate</label></td>
+							<td style='padding-top: 10px;'><input class='form-control' type='text' name=''></td>
+						</tr>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px;'><label>Base</label></td>
+							<td style='padding-top: 10px;'><input class='form-control' type='text' name=''></td>
+						</tr>
+					</table>
+				</div>
+				<div class='modal-footer'>
+					<button class='btn btn-primary btn-sm' type='submit' style='float: left;'>Ok</button>
 				</div>
 			</form>
 		</div>
@@ -67,8 +142,38 @@
 				<h4 class='modal-title'>Update</h4>
 			</div>
 			<form action='#' method='post'>
+				<input type='text' style='border: none; float: right; width: 40px; margin-right: 150px; padding-top: 10px;'>
+				<label style='float: right; padding-top: 10px;'>Sequence: </label>
 				<div class='modal-body'>
-				
+					<table width='80%'>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px;'><label>Code</label></td>
+							<td style='padding-top: 10px;'><input class='form-control' type='text' name=''></td>
+						</tr>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px;'><label>Tax Type Short Name</label></td>
+							<td style='padding-top: 10px;'><input class='form-control' type='text' name='type_short_name' readonly></td>
+						</tr>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px;'><label>Name</label></td>
+							<td style='padding-top: 10px;'><input class='form-control' type='text' name=''></td>
+						</tr>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px;'><label>Short Name</label></td>
+							<td style='padding-top: 10px;'><input class='form-control' type='text' name=''></td>
+						</tr>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px;'><label>Rate</label></td>
+							<td style='padding-top: 10px;'><input class='form-control' type='text' name=''></td>
+						</tr>
+						<tr>
+							<td style='padding-top: 10px; text-align: right; padding-right: 10px;'><label>Base</label></td>
+							<td style='padding-top: 10px;'><input class='form-control' type='text' name=''></td>
+						</tr>
+					</table>
+				</div>
+				<div class='modal-footer'>
+					<button class='btn btn-primary btn-sm' type='submit' style='float: left;'>Ok</button>
 				</div>
 			</form>
 		</div>

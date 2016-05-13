@@ -7,7 +7,7 @@ class Company_Settings extends MY_Controller{
 	}
 	
 	public function get_company_settings(){
-		$this->load->view($this->layout, ['top_navbar'=>'fragments/top_navbar/global_top_navbar', 'head_css' => 'fragments/head_css/company_settings','content'=>'fragments/content/company_settings', 'back_button'=>'../home', 'active_nav'=>'companysettings']);
+		$this->load->view($this->layout, ['top_navbar'=>'fragments/top_navbar/global_top_navbar', 'head_css'=>'fragments/head_css/company_settings', 'content'=>'fragments/content/company_settings', 'back_button'=>'../home', 'active_nav'=>'companysettings']);
 	}
       
 	public function get_company(){
@@ -17,11 +17,7 @@ class Company_Settings extends MY_Controller{
 	public function get_users(){
 		$this->load->view($this->layout, ['head_css'=>'fragments/head_css/companysettings/users', 'top_navbar'=>'fragments/top_navbar/global_top_navbar', 'content'=>'fragments/content/companysettings/users', 'footer_js'=>'fragments/footer_js/companysettings/users', 'back_button'=>'../company_settings', 'active_nav'=>'companysettings']);
 	}
-        
-	public function get_journals(){
-		$this->load->view($this->layout, ['head_css'=>'fragments/head_css/companysettings/journals', 'top_navbar'=>'fragments/top_navbar/global_top_navbar', 'content'=>'fragments/content/companysettings/journals', 'footer_js'=>'fragments/footer_js/companysettings/journals', 'back_button'=>'../company_settings', 'active_nav'=>'companysettings']);
-	}
-        
+   
 	public function get_transactions(){
 		$this->load->view($this->layout, ['head_css'=>'fragments/head_css/companysettings/transactions', 'top_navbar'=>'fragments/top_navbar/global_top_navbar', 'content'=>'fragments/content/companysettings/transactions', 'footer_js'=>'fragments/footer_js/companysettings/transactions', 'back_button'=>'../company_settings', 'active_nav'=>'companysettings']);
 	}

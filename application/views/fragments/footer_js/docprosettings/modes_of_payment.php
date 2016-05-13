@@ -1,7 +1,7 @@
 <script>
 	$(document).ready(function(){
 		$('#modes-of-payment-table').DataTable({
-			columnDefs: [{targets:[0, 1, 3, 4], width: '1px'}],
+			columnDefs: [{targets:[0, 1, 2], width: '1px'}, {targets:[4,5], width: '150px'}],
 		});
 		
 		$('#add').click(function(){

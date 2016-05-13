@@ -7,7 +7,7 @@ class Docpro_Settings extends MY_Controller{
 	}
 	
 	public function get_docpro_settings(){
-		$this->load->view($this->layout, ['top_navbar'=>'fragments/top_navbar/global_top_navbar', 'head_css' => 'fragments/head_css/docpro_settings','content'=>'fragments/content/docpro_settings', 'back_button'=>'../home', 'active_nav'=>'docprosettings']);
+		$this->load->view($this->layout, ['top_navbar'=>'fragments/top_navbar/global_top_navbar', 'head_css'=>'fragments/head_css/docpro_settings', 'content'=>'fragments/content/docpro_settings', 'back_button'=>'../home', 'active_nav'=>'docprosettings']);
 	}
 	
 	public function get_users(){

@@ -19,7 +19,74 @@
 	
 	
 		//Codes Here!
-	
+			
+		$('div').on('click', '.class', function(){
+			$("input[name='classification']").val($(this)[0].innerText);
+		});
+		
+		$(".classification-btn").click(function(){
+			var options = {
+						animation: true,
+						placement: 'right',
+						html: true,
+						content: function(){
+								return $('#class-select').html();
+						}
+			}
+			$(this).popover(options);
+		});
+		
+		$("input:not(input[name='bp_type']), select").focus(function(){
+			$('.popover').hide();
+		});
+
+
+		$('div').on('click', '.bptype', function(){
+			$("input[name='bp_type']").val($(this)[0].innerText);
+		});
+		
+		$(".bp-type-btn").click(function(){
+			var options = {
+						animation: true,
+						placement: 'right',
+						html: true,
+						content: function(){
+								return $('#bp-type-select').html();
+						}
+			}
+			$(this).popover(options);
+		});
+		
+		$("input:not(input[name='bp_type']), select").focus(function(){
+			$('.popover').hide();
+		});
+
+		$("input:not(input[name='bp_type']), select").focus(function(){
+			$('.popover').hide();
+		});
+
+
+		$('div').on('click', '.taxtype', function(){
+			$("input[name='tax_type']").val($(this)[0].innerText);
+		});
+		
+		$(".tax-type-btn").click(function(){
+			var options = {
+						animation: true,
+						placement: 'right',
+						html: true,
+						content: function(){
+								return $('#tax-type-select').html();
+						}
+			}
+			$(this).popover(options);
+		});
+		
+		$("input:not(input[name='tax_type']), select").focus(function(){
+			$('.popover').hide();
+		});
+			
+		
 	
 		initButtonPrevention();
 	});

@@ -7,7 +7,7 @@
 		</div>
 		<div class='card-body button-group-custom'>
 			<div class='row'>
-				<a href="<?php echo base_url('/'); ?>company_settings/company" class='col-md-3 col-xs-3 col-sm-3 title-hover' style='background-image: url("assets/img/background.png"); background-size: cover; padding: 20px; border: 1px solid #E5E5E5; background-color: #000; color: #000;'>
+				<a href="<?php echo base_url(); ?>company_settings/company" class='col-md-3 col-xs-3 col-sm-3 title-hover' style='background-image: url("assets/img/background.png"); background-size: cover; padding: 20px; border: 1px solid #E5E5E5; background-color: #000; color: #000;'>
 					<h4 style="text-align: center;">Company</h4>
 				</a>
 				<a href="<?php echo base_url(); ?>company_settings/users" class='col-md-3 col-xs-3 col-sm-3 title-hover' style='background-image: url("assets/img/background.png"); background-size: cover; padding: 20px; border: 1px solid #E5E5E5; background-color: #000; color: #000;'>
@@ -59,6 +59,7 @@
 					<h4 style="text-align: center;">Others</h4>
 				</a>
 			</div>
+		</div>
 		</div>
 	</div>
 </div>

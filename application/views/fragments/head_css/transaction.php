@@ -1,1 +1,1 @@
-<link href='assets/css/transaction.css' rel='stylesheet' type='text/css'>
+<link href='<?php echo base_url(); ?>/assets/css/transaction.css' rel='stylesheet' type='text/css'>

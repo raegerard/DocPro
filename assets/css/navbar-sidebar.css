@@ -45,7 +45,7 @@ div#app-container.no-popover ul#sidebar-container div.popover {
 }
 ul#sidebar-container > li a:hover, ul#sidebar-container > li a:hover span, ul#sidebar-container .navbar-nav > li:hover span{
 	color: #FFF !important;
-	background-color: #212121 !important;
+	background-color: #696969 !important;
 }
 .side-menu .navbar .navbar-nav > li:hover > a, .side-menu .navbar.navbar-default .navbar-nav > li:hover > a{
 	color: #FFF !important;

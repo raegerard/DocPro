@@ -19,7 +19,26 @@
 	
 	
 		//Codes Here!
-	
+			
+		$('div').on('click', '.account-class', function(){
+			$("input[name='accnt_class']").val($(this)[0].innerText);
+		});
+		
+		$(".accnt-class-btn").click(function(){
+			var options = {
+						animation: true,
+						placement: 'right',
+						html: true,
+						content: function(){
+								return $('#account-class-select').html();
+						}
+			}
+			$(this).popover(options);
+		});
+		
+		$("input:not(input[name='accnt_class']), select").focus(function(){
+			$('.popover').hide();
+		});
 	
 		initButtonPrevention();
 	});
