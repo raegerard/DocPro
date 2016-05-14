@@ -8,44 +8,38 @@ class Modes_Of_Payment extends CI_Controller{
     }
     
     public function add(){
-        $data = array('pay_mode_code' => $this->input->post('paymodecode'),
-                      'pay_mode_seq' => $this->input->post('paymodeseq'),
-                      'pay_mod_name' => $this->input->post('paymodename'),
-                      'pay_mod_shortname' => $this->input->post('paymodeshortname'),
-                      'pay_code' => $this->input->post('paycode'),
-                      'pay_type' => $this->input->post('paytype'));
+        $data = array('pay_type_code' => $this->input->post('code'),
+                      'pay_mod_name' => $this->input->post('name'),
+                      'pay_mod_shortname' => $this->input->post('shortname'),
+                      'pay_type' => $this->input->post('paymenttype'));
 
-        Modes_of_payment_model::Add($data);
+        Modes_of_Payment_Model::add($data);
 
-        redirect('docprosettings/modesofpayment', 'refresh');
+        redirect('docpro_settings/modes_of_payment', 'refresh');
     }
 
     public function edit(){
       
-        $id = $this->input->post('paymodeid');
+        $id = $this->input->post('editid');
 
-        $data = array('pay_mode_code' => $this->input->post('paymodecode'),
-                      'pay_mode_seq' => $this->input->post('paymodeseq'),
-                      'pay_mod_name' => $this->input->post('paymodename'),
-                      'pay_mod_shortname' => $this->input->post('paymodeshortname'),
-                      'pay_code' => $this->input->post('paycode'),
-                      'pay_type' => $this->input->post('paytype'));
+        $data = array('pay_type_code' => $this->input->post('code'),
+                      'pay_mod_name' => $this->input->post('name'),
+                      'pay_mod_shortname' => $this->input->post('shortname'),
+                      'pay_type' => $this->input->post('paymenttype'));
 
-        Modes_of_payment_model::Edit($id,$data);
+        Modes_of_Payment_Model::edit($id,$data);
 
-        redirect('docprosettings/modesofpayment', 'refresh');
+        redirect('docpro_settings/modes_of_payment', 'refresh');
     }
 
     public function update(){
-        $data = array('pay_mode_code' => $this->input->post('paymodecode'),
-                      'pay_mode_seq' => $this->input->post('paymodeseq'),
-                      'pay_mod_name' => $this->input->post('paymodename'),
-                      'pay_mod_shortname' => $this->input->post('paymodeshortname'),
-                      'pay_code' => $this->input->post('paycode'),
-                      'pay_type' => $this->input->post('paytype'));
+        $data = array('pay_type_code' => $this->input->post('code'),
+                      'pay_mod_name' => $this->input->post('name'),
+                      'pay_mod_shortname' => $this->input->post('shortname'),
+                      'pay_type' => $this->input->post('paymenttype'));
 
-        Modes_of_payment_model::Update($data);
+        Modes_of_Payment_Model::update($data);
 
-        redirect('docprosettings/modesofpayment', 'refresh');
+        redirect('docpro_settings/modes_of_payment', 'refresh');
     }
 }

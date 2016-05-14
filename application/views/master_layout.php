@@ -41,7 +41,7 @@
 		<link href='<?php echo base_url(); ?>assets/css/blank.css' rel='stylesheet' type='text/css'>
 		<link href='<?php echo base_url(); ?>assets/css/navbar-sidebar.css' rel='stylesheet' type='text/css'>
 
-		<style>
+		<!--<style>
 			.popover{
 				margin-left: -5px !important;
 				border-radius: 0 !important;
@@ -73,7 +73,7 @@
 			.sidebar-popover:hover{
 				background-color: #696969 !important;
 			}
-		</style>
+		</style>-->
 
 		<?php if(isset($head_css)){ $this->load->view($head_css); } ?>
 		
@@ -631,14 +631,14 @@
 				$('#tables-nav span').attr('style', 'background-color: #696969 !important;');
 			});
 		</script>
-		<script>
+		<!--<script>
 			$('.side-body').hover(function(){
 				$('.popover').popover('hide');
 			});
 			$('.navbar-header').hover(function(){
 				$('.popover').popover('hide');
 			});
-		</script>
+		</script>-->
 		<script src="<?php echo base_url(); ?>libs/angular/angular.min.js"></script>
 		
 		<?php if(isset($footer_js)){ $this->load->view($footer_js); } ?>

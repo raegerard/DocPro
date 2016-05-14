@@ -126,12 +126,14 @@ $autoload['language'] = array();
 |
 |	$autoload['model'] = array('first_model' => 'first');
 */
-$autoload['model'] = array('user_model', 
-                           'business_partner_classification_model',
-                           'business_partner_type_model',
-                           'Modes_of_payment_model',
-                           'Company_model',
-                           'Users_model',
-                           'Journals_model',
-                           'Taxes_model'
+$autoload['model'] = array('User_Model',
+                           'Company_Model',
+                           'Company_Profile_Model',
+                           'Profile_Model',
+                           'Journals_Model',
+                           'Documents_Model',
+                           'Banks_Model',
+                           'Discounts_Model',
+                           'Taxes_Model',
+                           'Modes_of_Payment_Model'
                            );
