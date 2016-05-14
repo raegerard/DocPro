@@ -3,9 +3,24 @@
 		$('#users-table').DataTable({
 			columnDefs: [{targets: 0, width: '1px'}, {targets: 3, width: '100px'}],
 		});
+
+		$('div').on('click', '.close-popover', function(){
+
+             $('.popover').popover('hide');
+        });
 		
 		$('#add').click(function(){
-			$('#add-modal').modal('show');
+			$(this).popover({
+                animation: true,
+                html: true,
+                placement: 'right',
+                content: function(){
+                    return $('#add-modal').html();
+                },
+                container: '.navbar-body'
+                
+        });
+
 		});
 
 		$('#users-table').on('click', '.edit', function(){

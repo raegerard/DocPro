@@ -3,6 +3,11 @@
 		$('#chart-of-accounts-table').DataTable({
 			columnDefs: [{targets: [0,1,3,5,6,7], width: '1px'}],
 		});
+
+		$('div').on('click', '.close-popover', function(){
+
+             $('.popover').popover('hide');
+        });
 		
 		$('#add').click(function(){
 			$('#add-modal').modal('show');

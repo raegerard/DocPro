@@ -3,9 +3,24 @@
 		$('#trade-discounts-table').DataTable({
 			columnDefs: [{targets: [0, 1], width: '1px'}, {targets: [3,4], width: '100px'}]
 		});
+
+		$('div').on('click', '.close-popover', function(){
+
+             $('.popover').popover('hide');
+        });
 		
 		$('#add').click(function(){
-			$('#add-modal').modal('show');
+			$(this).popover({
+                animation: true,
+                html: true,
+                placement: 'right',
+                content: function(){
+                    return $('#add-modal').html();
+                },
+                container: '.navbar-body'
+                
+        	});
+
 		});
 	
 		$('#trade-discounts-table').on('click', '.edit', function(){
