@@ -98,7 +98,7 @@
 				<h4 class='modal-title' style="font-family: 'Roboto Condensed', sans-serif;">View Company</h4>
 			</div>
 			<form>
-				<div class='view-modal-body'>
+				<div class='modal-body'>
 					<input id='view-sequence' type='text' style='border: none; float: right; width: 40px; margin-right: 50px; background-color: #e8e8e8; text-align: center; font-weight: bold;'>
 					<label style='float: right;'>Sequence: </label>
 					<table width='90%'>

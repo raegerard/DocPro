@@ -86,6 +86,7 @@
 		background-color: #e8e8e8;
 		box-shadow: 10px;
 		width: 800px;
+
 	}
 
 	.popover-content{
@@ -120,14 +121,6 @@
 	.col-md-4{
         width: 250px;
    		height: 440px;
-	}
-
-	.view-modal-body{
-		width: 100%;
-		height: 440px;
-   	    padding-right: 24px;
-   	    padding-left: 0px;
-        border-right: 1px solid #D5D5D5;
 	}
 
 </style>
