@@ -41,8 +41,8 @@
 		<link href='<?php echo base_url(); ?>assets/css/blank.css' rel='stylesheet' type='text/css'>
 		<link href='<?php echo base_url(); ?>assets/css/navbar-sidebar.css' rel='stylesheet' type='text/css'>
 
-		<!--<style>
-			.popover{
+		<style>
+			.popover.sidebar-popover-content{
 				margin-left: -5px !important;
 				border-radius: 0 !important;
 				background-color: #000;
@@ -51,29 +51,30 @@
 				width: 220px;
 				z-index: 99999;
 				overflow-y: auto;
+				height: auto;
 				max-height: 390px;
 			}
-			.popover-content{
+			.popover.sidebar-popover-content .popover-content{
 				padding-left: 0;
 				padding-right: 0;
 			}
-			.popover a{
+			.popover.sidebar-popover-content a{
 				color: #FFF !important;
 			}
-			.sidebar-popover{
+			.popover.sidebar-popover-content .sidebar-popover{
 				padding: 10px;
 				padding-left: 20px;
 				cursor: hand;
 				cursor: pointer;
 			}
-			.sidebar-popover a{
+			.popover.sidebar-popover-content .sidebar-popover a{
 				padding: 10px;
 				padding-left: 20px;
 			}
-			.sidebar-popover:hover{
+			.popover.sidebar-popover-content .sidebar-popover:hover{
 				background-color: #696969 !important;
 			}
-		</style>-->
+		</style>
 
 		<?php if(isset($head_css)){ $this->load->view($head_css); } ?>
 		
@@ -247,194 +248,208 @@
 		
 		<!-- SIDEBAR POPOVER -->
 		<div id='journals-popover' style='display: none;'>
-			<div class='col-md-12 sidebar-popover'>
-				<a href="<?php echo base_url(); ?>journals/sales" style='padding-right: 114px;'><i class='fa fa-file'></i>&nbsp; Sales</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href="<?php echo base_url(); ?>journals/receipts" style='padding-right: 96px;'><i class='fa fa-file'></i>&nbsp; Receipts</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href="<?php echo base_url(); ?>journals/collections" style='padding-right: 83px;'><i class='fa fa-file'></i>&nbsp; Collections</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href="<?php echo base_url(); ?>journals/purchases" style='padding-right: 85px;'><i class='fa fa-file'></i>&nbsp; Purchases</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href="<?php echo base_url(); ?>journals/disbursements" style='padding-right: 60px;'><i class='fa fa-file'></i>&nbsp; Disbursements</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href="<?php echo base_url(); ?>journals/adjustments" style='padding-right: 74px;'><i class='fa fa-file'></i>&nbsp; Adjustments</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href="<?php echo base_url(); ?>journals/specials" style='padding-right: 95px;'><i class='fa fa-file'></i>&nbsp; Specials</a>
+			<div class='sidebar-popover-content'>
+				<div class='col-md-12 sidebar-popover'>
+					<a href="<?php echo base_url(); ?>journals/sales" style='padding-right: 114px;'><i class='fa fa-file'></i>&nbsp; Sales</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href="<?php echo base_url(); ?>journals/receipts" style='padding-right: 96px;'><i class='fa fa-file'></i>&nbsp; Receipts</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href="<?php echo base_url(); ?>journals/collections" style='padding-right: 83px;'><i class='fa fa-file'></i>&nbsp; Collections</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href="<?php echo base_url(); ?>journals/purchases" style='padding-right: 85px;'><i class='fa fa-file'></i>&nbsp; Purchases</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href="<?php echo base_url(); ?>journals/disbursements" style='padding-right: 60px;'><i class='fa fa-file'></i>&nbsp; Disbursements</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href="<?php echo base_url(); ?>journals/adjustments" style='padding-right: 74px;'><i class='fa fa-file'></i>&nbsp; Adjustments</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href="<?php echo base_url(); ?>journals/specials" style='padding-right: 95px;'><i class='fa fa-file'></i>&nbsp; Specials</a>
+				</div>
 			</div>
 		</div>
 		
 		<div id='financial-reports-popover' style='display: none;'>
-			<div class='col-md-12 sidebar-popover'>
-				<a href='<?php echo base_url(); ?>financial_reports/trial_balance' style='padding-right: 72px;'><i class='fa fa-file'></i>&nbsp; Trial Balance</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href='<?php echo base_url(); ?>financial_reports/balance_sheet' style='padding-right: 62px;'><i class='fa fa-file'></i>&nbsp; Balance Sheet</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href='<?php echo base_url(); ?>financial_reports/income_statement' style='padding-right: 41px;'><i class='fa fa-file'></i>&nbsp; Income Statement</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href='<?php echo base_url(); ?>financial_reports/equity_statement' style='padding-right: 46px;'><i class='fa fa-file'></i>&nbsp; Equity Statement</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href='<?php echo base_url(); ?>financial_reports/cash_flow_statement' style='padding-right: 31px;'><i class='fa fa-file'></i>&nbsp; Cashflow Statement</a>
+			<div class='sidebar-popover-content'>
+				<div class='col-md-12 sidebar-popover'>
+					<a href='<?php echo base_url(); ?>financial_reports/trial_balance' style='padding-right: 72px;'><i class='fa fa-file'></i>&nbsp; Trial Balance</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href='<?php echo base_url(); ?>financial_reports/balance_sheet' style='padding-right: 62px;'><i class='fa fa-file'></i>&nbsp; Balance Sheet</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href='<?php echo base_url(); ?>financial_reports/income_statement' style='padding-right: 41px;'><i class='fa fa-file'></i>&nbsp; Income Statement</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href='<?php echo base_url(); ?>financial_reports/equity_statement' style='padding-right: 46px;'><i class='fa fa-file'></i>&nbsp; Equity Statement</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href='<?php echo base_url(); ?>financial_reports/cash_flow_statement' style='padding-right: 31px;'><i class='fa fa-file'></i>&nbsp; Cashflow Statement</a>
+				</div>
 			</div>
 		</div>
 		
 		<div id='company-reports-popover' style='display: none;'>
-			<div class='col-md-12 sidebar-popover'>
-				<a href="<?php echo base_url(); ?>company_reports/statement_of_accounts" style='padding-right: 14px;'><i class='fa fa-file'></i>&nbsp; Statement of Accounts</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href="<?php echo base_url(); ?>company_reports/company_documents" style='padding-right: 22px;'><i class='fa fa-file'></i>&nbsp; Company Documents</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href="<?php echo base_url(); ?>company_reports/bank_statements" style='padding-right: 46px;'><i class='fa fa-file'></i>&nbsp; Bank Statements</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href="<?php echo base_url(); ?>company_reports/fixed_assets" style='padding-right: 70px;'><i class='fa fa-file'></i>&nbsp; Fixed Assets</a>
+			<div class='sidebar-popover-content'>
+				<div class='col-md-12 sidebar-popover'>
+					<a href="<?php echo base_url(); ?>company_reports/statement_of_accounts" style='padding-right: 14px;'><i class='fa fa-file'></i>&nbsp; Statement of Accounts</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href="<?php echo base_url(); ?>company_reports/company_documents" style='padding-right: 22px;'><i class='fa fa-file'></i>&nbsp; Company Documents</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href="<?php echo base_url(); ?>company_reports/bank_statements" style='padding-right: 46px;'><i class='fa fa-file'></i>&nbsp; Bank Statements</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href="<?php echo base_url(); ?>company_reports/fixed_assets" style='padding-right: 70px;'><i class='fa fa-file'></i>&nbsp; Fixed Assets</a>
+				</div>
 			</div>
 		</div>
 		
 		<div id='book-of-accounts-popover' style='display: none;'>
-			<div class='col-md-12 sidebar-popover'>
-				<a href='<?php echo base_url(); ?>book_of_accounts/general_ledger' style='padding-right: 42px;'><i class='fa fa-file'></i>&nbsp; General Ledger</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href='<?php echo base_url(); ?>book_of_accounts/subsidiary_ledger' style='padding-right: 26px;'><i class='fa fa-file'></i>&nbsp; Subsidiary Ledger</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href='<?php echo base_url(); ?>book_of_accounts/sales' style='padding-right: 97px;'><i class='fa fa-file'></i>&nbsp; Sales</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href='<?php echo base_url(); ?>book_of_accounts/receipts' style='padding-right: 79px;'><i class='fa fa-file'></i>&nbsp; Receipts</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href='<?php echo base_url(); ?>book_of_accounts/collections' style='padding-right: 66px;'><i class='fa fa-file'></i>&nbsp; Collections</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href='<?php echo base_url(); ?>book_of_accounts/purchases' style='padding-right: 68px;'><i class='fa fa-file'></i>&nbsp; Purchases</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href='<?php echo base_url(); ?>book_of_accounts/disbursements' style='padding-right: 43px;'><i class='fa fa-file'></i>&nbsp; Disbursements</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href='<?php echo base_url(); ?>book_of_accounts/adjustments' style='padding-right: 74px;'><i class='fa fa-file'></i>&nbsp; Adjustments</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href='<?php echo base_url(); ?>book_of_accounts/others' style='padding-right: 91px;'><i class='fa fa-file'></i>&nbsp; Others</a>
+			<div class='sidebar-popover-content'>
+				<div class='col-md-12 sidebar-popover'>
+					<a href='<?php echo base_url(); ?>book_of_accounts/general_ledger' style='padding-right: 42px;'><i class='fa fa-file'></i>&nbsp; General Ledger</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href='<?php echo base_url(); ?>book_of_accounts/subsidiary_ledger' style='padding-right: 26px;'><i class='fa fa-file'></i>&nbsp; Subsidiary Ledger</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href='<?php echo base_url(); ?>book_of_accounts/sales' style='padding-right: 97px;'><i class='fa fa-file'></i>&nbsp; Sales</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href='<?php echo base_url(); ?>book_of_accounts/receipts' style='padding-right: 79px;'><i class='fa fa-file'></i>&nbsp; Receipts</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href='<?php echo base_url(); ?>book_of_accounts/collections' style='padding-right: 66px;'><i class='fa fa-file'></i>&nbsp; Collections</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href='<?php echo base_url(); ?>book_of_accounts/purchases' style='padding-right: 68px;'><i class='fa fa-file'></i>&nbsp; Purchases</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href='<?php echo base_url(); ?>book_of_accounts/disbursements' style='padding-right: 43px;'><i class='fa fa-file'></i>&nbsp; Disbursements</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href='<?php echo base_url(); ?>book_of_accounts/adjustments' style='padding-right: 74px;'><i class='fa fa-file'></i>&nbsp; Adjustments</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href='<?php echo base_url(); ?>book_of_accounts/others' style='padding-right: 91px;'><i class='fa fa-file'></i>&nbsp; Others</a>
+				</div>
 			</div>
 		</div>
 		
 		<div id='docpro-settings-popover' style='display: none;'>
-			<div class='col-md-12 sidebar-popover'>
-				<a href='<?php echo base_url(); ?>docpro_settings/company' style='padding-right: 75px;'><i class='fa fa-file'></i>&nbsp; Company</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href="<?php echo base_url(); ?>docpro_settings/users" style='padding-right: 96px;'><i class='fa fa-file'></i>&nbsp; Users</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href="<?php echo base_url(); ?>docpro_settings/transactions" style='padding-right: 56px;'><i class='fa fa-file'></i>&nbsp; Transactions</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href="<?php echo base_url(); ?>docpro_settings/documents" style='padding-right: 64px;'><i class='fa fa-file'></i>&nbsp; Documents</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href="<?php echo base_url(); ?>docpro_settings/modes_of_payment" style='padding-right: 21px;'><i class='fa fa-file'></i>&nbsp; Modes of Payment</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href="<?php echo base_url(); ?>docpro_settings/taxes" style='padding-right: 96px;'><i class='fa fa-file'></i>&nbsp; Taxes</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href="<?php echo base_url(); ?>docpro_settings/discounts" style='padding-right: 72px;'><i class='fa fa-file'></i>&nbsp; Discounts</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href="<?php echo base_url(); ?>docpro_settings/chart_of_accounts" style='padding-right: 43px;'><i class='fa fa-file'></i>&nbsp; Chart of Accounts</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href="<?php echo base_url(); ?>docpro_settings/banks" style='padding-right: 110px;'><i class='fa fa-file'></i>&nbsp; Banks</a>
+			<div class='sidebar-popover-content'>
+				<div class='col-md-12 sidebar-popover'>
+					<a href='<?php echo base_url(); ?>docpro_settings/company' style='padding-right: 75px;'><i class='fa fa-file'></i>&nbsp; Company</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href="<?php echo base_url(); ?>docpro_settings/users" style='padding-right: 96px;'><i class='fa fa-file'></i>&nbsp; Users</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href="<?php echo base_url(); ?>docpro_settings/transactions" style='padding-right: 56px;'><i class='fa fa-file'></i>&nbsp; Transactions</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href="<?php echo base_url(); ?>docpro_settings/documents" style='padding-right: 64px;'><i class='fa fa-file'></i>&nbsp; Documents</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href="<?php echo base_url(); ?>docpro_settings/modes_of_payment" style='padding-right: 21px;'><i class='fa fa-file'></i>&nbsp; Modes of Payment</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href="<?php echo base_url(); ?>docpro_settings/taxes" style='padding-right: 96px;'><i class='fa fa-file'></i>&nbsp; Taxes</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href="<?php echo base_url(); ?>docpro_settings/discounts" style='padding-right: 72px;'><i class='fa fa-file'></i>&nbsp; Discounts</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href="<?php echo base_url(); ?>docpro_settings/chart_of_accounts" style='padding-right: 43px;'><i class='fa fa-file'></i>&nbsp; Chart of Accounts</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href="<?php echo base_url(); ?>docpro_settings/banks" style='padding-right: 110px;'><i class='fa fa-file'></i>&nbsp; Banks</a>
+				</div>
 			</div>
 		</div>
 		
 		<div id='company-settings-popover' style='display: none;'>
-			<div class='col-md-12 sidebar-popover'>
-				<a href="<?php echo base_url(); ?>company_settings/company" style='padding-right: 75px;'><i class='fa fa-file'></i>&nbsp; Company</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href="<?php echo base_url(); ?>company_settings/users" style='padding-right: 96px;'><i class='fa fa-file'></i>&nbsp; Users</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href="<?php echo base_url(); ?>company_settings/transactions" style='padding-right: 56px;'><i class='fa fa-file'></i>&nbsp; Transactions</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href="<?php echo base_url(); ?>company_settings/documents" style='padding-right: 64px;'><i class='fa fa-file'></i>&nbsp; Documents</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href="<?php echo base_url(); ?>company_settings/modes_of_payment" style='padding-right: 21px;'><i class='fa fa-file'></i>&nbsp; Modes of Payment</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href="<?php echo base_url(); ?>company_settings/taxes" style='padding-right: 96px;'><i class='fa fa-file'></i>&nbsp; Taxes</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href="<?php echo base_url(); ?>company_settings/business_partners" style='padding-right: 23px;'><i class='fa fa-file'></i>&nbsp; Business Partners</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href="<?php echo base_url(); ?>company_settings/departments" style='padding-right: 56px;'><i class='fa fa-file'></i>&nbsp; Departments</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href="<?php echo base_url(); ?>company_settings/profit_cost_centers" style='padding-right: 20px;'><i class='fa fa-file'></i>&nbsp; Profit Cost Centers</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href="<?php echo base_url(); ?>company_settings/products" style='padding-right: 78px;'><i class='fa fa-file'></i>&nbsp; Products</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href="<?php echo base_url(); ?>company_settings/services" style='padding-right: 81px;'><i class='fa fa-file'></i>&nbsp; Services</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href="<?php echo base_url(); ?>company_settings/trade_discounts" style='padding-right: 36px;'><i class='fa fa-file'></i>&nbsp; Trade Discounts</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href="<?php echo base_url(); ?>company_settings/deductions" style='padding-right: 65px;'><i class='fa fa-file'></i>&nbsp; Deductions</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href="<?php echo base_url(); ?>company_settings/chart_of_accounts" style='padding-right: 26px;'><i class='fa fa-file'></i>&nbsp; Chart of Accounts</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href="<?php echo base_url(); ?>company_settings/banks" style='padding-right: 93px;'><i class='fa fa-file'></i>&nbsp; Banks</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href="<?php echo base_url(); ?>company_settings/others" style='padding-right: 91px;'><i class='fa fa-file'></i>&nbsp; Others</a>
+			<div class='sidebar-popover-content'>
+				<div class='col-md-12 sidebar-popover'>
+					<a href="<?php echo base_url(); ?>company_settings/company" style='padding-right: 75px;'><i class='fa fa-file'></i>&nbsp; Company</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href="<?php echo base_url(); ?>company_settings/users" style='padding-right: 96px;'><i class='fa fa-file'></i>&nbsp; Users</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href="<?php echo base_url(); ?>company_settings/transactions" style='padding-right: 56px;'><i class='fa fa-file'></i>&nbsp; Transactions</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href="<?php echo base_url(); ?>company_settings/documents" style='padding-right: 64px;'><i class='fa fa-file'></i>&nbsp; Documents</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href="<?php echo base_url(); ?>company_settings/modes_of_payment" style='padding-right: 21px;'><i class='fa fa-file'></i>&nbsp; Modes of Payment</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href="<?php echo base_url(); ?>company_settings/taxes" style='padding-right: 96px;'><i class='fa fa-file'></i>&nbsp; Taxes</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href="<?php echo base_url(); ?>company_settings/business_partners" style='padding-right: 23px;'><i class='fa fa-file'></i>&nbsp; Business Partners</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href="<?php echo base_url(); ?>company_settings/departments" style='padding-right: 56px;'><i class='fa fa-file'></i>&nbsp; Departments</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href="<?php echo base_url(); ?>company_settings/profit_cost_centers" style='padding-right: 20px;'><i class='fa fa-file'></i>&nbsp; Profit Cost Centers</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href="<?php echo base_url(); ?>company_settings/products" style='padding-right: 78px;'><i class='fa fa-file'></i>&nbsp; Products</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href="<?php echo base_url(); ?>company_settings/services" style='padding-right: 81px;'><i class='fa fa-file'></i>&nbsp; Services</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href="<?php echo base_url(); ?>company_settings/trade_discounts" style='padding-right: 36px;'><i class='fa fa-file'></i>&nbsp; Trade Discounts</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href="<?php echo base_url(); ?>company_settings/deductions" style='padding-right: 65px;'><i class='fa fa-file'></i>&nbsp; Deductions</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href="<?php echo base_url(); ?>company_settings/chart_of_accounts" style='padding-right: 26px;'><i class='fa fa-file'></i>&nbsp; Chart of Accounts</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href="<?php echo base_url(); ?>company_settings/banks" style='padding-right: 93px;'><i class='fa fa-file'></i>&nbsp; Banks</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href="<?php echo base_url(); ?>company_settings/others" style='padding-right: 91px;'><i class='fa fa-file'></i>&nbsp; Others</a>
+				</div>
 			</div>
 		</div>
 		
 		<div id='tables-popover' style='display: none;'>
-			<div class='col-md-12 sidebar-popover'>
-				<a href="<?php echo base_url(); ?>journals/sales" style='padding-right: 50px;'><i class='fa fa-file'></i>&nbsp; Value Added Tax</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href="<?php echo base_url(); ?>journals/receipts" style='padding-right: 55px;'><i class='fa fa-file'></i>&nbsp; Withholding Tax</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href="<?php echo base_url(); ?>journals/collections" style='padding-right: 74px;'><i class='fa fa-file'></i>&nbsp; Accumulator</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href="<?php echo base_url(); ?>journals/purchases" style='padding-right: 24px;'><i class='fa fa-file'></i>&nbsp; Financial Statements</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href="<?php echo base_url(); ?>journals/purchases" style='padding-right: 72px;'><i class='fa fa-file'></i>&nbsp; Trial Balance</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href="<?php echo base_url(); ?>journals/purchases" style='padding-right: 59px;'><i class='fa fa-file'></i>&nbsp; General Ledger</a>
-			</div>
-			<div class='col-md-12 sidebar-popover'>
-				<a href="<?php echo base_url(); ?>journals/purchases" style='padding-right: 43px;'><i class='fa fa-file'></i>&nbsp; Subsidiary Ledger</a>
+			<div class='sidebar-popover-content'>
+				<div class='col-md-12 sidebar-popover'>
+					<a href="<?php echo base_url(); ?>journals/sales" style='padding-right: 50px;'><i class='fa fa-file'></i>&nbsp; Value Added Tax</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href="<?php echo base_url(); ?>journals/receipts" style='padding-right: 55px;'><i class='fa fa-file'></i>&nbsp; Withholding Tax</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href="<?php echo base_url(); ?>journals/collections" style='padding-right: 74px;'><i class='fa fa-file'></i>&nbsp; Accumulator</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href="<?php echo base_url(); ?>journals/purchases" style='padding-right: 24px;'><i class='fa fa-file'></i>&nbsp; Financial Statements</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href="<?php echo base_url(); ?>journals/purchases" style='padding-right: 72px;'><i class='fa fa-file'></i>&nbsp; Trial Balance</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href="<?php echo base_url(); ?>journals/purchases" style='padding-right: 59px;'><i class='fa fa-file'></i>&nbsp; General Ledger</a>
+				</div>
+				<div class='col-md-12 sidebar-popover'>
+					<a href="<?php echo base_url(); ?>journals/purchases" style='padding-right: 43px;'><i class='fa fa-file'></i>&nbsp; Subsidiary Ledger</a>
+				</div>
 			</div>
 		</div>
 		
@@ -465,7 +480,6 @@
 		<!-- AdminLTE App -->
 		<script src="<?php echo base_url(); ?>libs/admin_lte/dist/js/app.min.js"></script>
 
-
 		<script>
 			$(document).ready(function(){
 				$('button.fa-rotate-90').on('click', function(){
@@ -480,14 +494,17 @@
 			$('#financial-reports-nav').popover({
 				animation: false,
 				html: true,
-				placement: 'right',
+				placement: function(context, src) {
+				    $(context).addClass('sidebar-popover-content');
+   					return 'right';
+				},
 				trigger: 'manual',
 				content: function(){
 					return $('#financial-reports-popover').html();
 				},
 				container: 'body',
 			}).on("mouseenter", function () {
-				$('.popover').popover('hide');
+				$('.sidebar-popover-content').popover('hide');
 				var _this = this;
 				$(this).popover("show");
 				$(this).siblings(".popover").on("mouseleave", function () {
@@ -497,19 +514,23 @@
 				$('ul#sidebar-container > li a, ul#sidebar-container > li span').removeAttr('style');
 				$(this).attr('style', 'background-color: #696969 !important');
 				$('#financial-reports-nav span').attr('style', 'background-color: #696969 !important;');
+
 			});
 			
 			$('#journals-nav').popover({
 				animation: false,
 				html: true,
-				placement: 'right',
+				placement: function(context, src) {
+				    $(context).addClass('sidebar-popover-content');
+   					return 'right';
+				},
 				trigger: 'manual',
 				content: function(){
 					return $('#journals-popover').html();
 				},
 				container: 'body',
 			}).on("mouseenter", function () {
-				$('.popover').popover('hide');
+				$('.sidebar-popover-content').popover('hide');
 				var _this = this;
 				$(this).popover("show");
 				$(this).siblings(".popover").on("mouseleave", function () {
@@ -524,14 +545,17 @@
 			$('#company-reports-nav').popover({
 				animation: false,
 				html: true,
-				placement: 'right',
+				placement: function(context, src) {
+				    $(context).addClass('sidebar-popover-content');
+   					return 'right';
+				},
 				trigger: 'manual',
 				content: function(){
 					return $('#company-reports-popover').html();
 				},
 				container: 'body',
 			}).on("mouseenter", function () {
-				$('.popover').popover('hide');
+				$('.sidebar-popover-content').popover('hide');
 				var _this = this;
 				$(this).popover("show");
 				$(this).siblings(".popover").on("mouseleave", function () {
@@ -546,14 +570,17 @@
 			$('#book-of-accounts-nav').popover({
 				animation: false,
 				html: true,
-				placement: 'right',
+				placement: function(context, src) {
+				    $(context).addClass('sidebar-popover-content');
+   					return 'right';
+				},
 				trigger: 'manual',
 				content: function(){
 					return $('#book-of-accounts-popover').html();
 				},
 				container: 'body',
 			}).on("mouseenter", function () {
-				$('.popover').popover('hide');
+				$('.sidebar-popover-content').popover('hide');
 				var _this = this;
 				$(this).popover("show");
 				$(this).siblings(".popover").on("mouseleave", function () {
@@ -568,14 +595,17 @@
 			$('#docpro-settings-nav').popover({
 				animation: false,
 				html: true,
-				placement: 'right',
+				placement: function(context, src) {
+				    $(context).addClass('sidebar-popover-content');
+   					return 'right';
+				},
 				trigger: 'manual',
 				content: function(){
 					return $('#docpro-settings-popover').html();
 				},
 				container: 'body',
 			}).on("mouseenter", function () {
-				$('.popover').popover('hide');
+				$('.sidebar-popover-content').popover('hide');
 				var _this = this;
 				$(this).popover("show");
 				$(this).siblings(".popover").on("mouseleave", function () {
@@ -590,14 +620,17 @@
 			$('#company-settings-nav').popover({
 				animation: false,
 				html: true,
-				placement: 'right',
+				placement: function(context, src) {
+				    $(context).addClass('sidebar-popover-content');
+   					return 'right';
+				},
 				trigger: 'manual',
 				content: function(){
 					return $('#company-settings-popover').html();
 				},
 				container: 'body',
 			}).on("mouseenter", function () {
-				$('.popover').popover('hide');
+				$('.sidebar-popover-content').popover('hide');
 				var _this = this;
 				$(this).popover("show");
 				$(this).siblings(".popover").on("mouseleave", function () {
@@ -612,14 +645,17 @@
 			$('#tables-nav').popover({
 				animation: false,
 				html: true,
-				placement: 'right',
+				placement: function(context, src) {
+				    $(context).addClass('sidebar-popover-content');
+   					return 'right';
+				},
 				trigger: 'manual',
 				content: function(){
 					return $('#tables-popover').html();
 				},
 				container: 'body',
 			}).on("mouseenter", function () {
-				$('.popover').popover('hide');
+				$('.sidebar-popover-content').popover('hide');
 				var _this = this;
 				$(this).popover("show");
 				$(this).siblings(".popover").on("mouseleave", function () {
@@ -631,14 +667,15 @@
 				$('#tables-nav span').attr('style', 'background-color: #696969 !important;');
 			});
 		</script>
-		<!--<script>
+		<script>
 			$('.side-body').hover(function(){
-				$('.popover').popover('hide');
+				$('.sidebar-popover-content').popover('hide');
 			});
 			$('.navbar-header').hover(function(){
-				$('.popover').popover('hide');
+				$('.sidebar-popover-content').popover('hide');
 			});
-		</script>-->
+		</script>
+		
 		<script src="<?php echo base_url(); ?>libs/angular/angular.min.js"></script>
 		
 		<?php if(isset($footer_js)){ $this->load->view($footer_js); } ?>

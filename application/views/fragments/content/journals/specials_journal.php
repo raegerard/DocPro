@@ -235,13 +235,12 @@
 													<div class='title'>
 														<label style='font-weight: normal; padding-top: 8px;'>Document</label>
 														<span style='float: right;'>
-															<button class='btn btn-primary'>Cash</button>
-															<button class='btn btn-success'>Charge</button>
+															<cash-credit-btn></cash-credit-btn>
 														</span>
 													</div>
 												</div>
 											</div>
-											<div class='card-body' id='card-2-form' style='padding: 0; padding-top: 15px;'>
+											<div class='card-body' id='card-2-form' style='padding: 0; padding-top: 15px; display: none;'>
 												<div class='col-md-12 transaction-input-row-gutter'>
 													<div class='col-md-1 col-custom' style='text-align: right;'>
 														<label style='font-size: 12px; color: #000;'>Document</label>
@@ -305,7 +304,7 @@
 													</div>
 													<div class='col-md-3 col-input-custom'>
 														<label>Type of Payment</label>
-														<input type='text' class='form-control' style='color: #000C98; text-align: center;' readonly />
+														<input ng-model='type_of_payment' type='text' class='form-control' style='color: #000C98; text-align: center;' readonly />
 													</div>
 													<div class='col-md-3 col-input-custom'>
 														<label>Terms</label>
@@ -404,14 +403,17 @@
 											</div>
 										</div>
 										
-										<div class='card' style='margin-top: 20px; background-color: #F0F0F0;'>
+										<div class='card box box-primary' style='margin-top: 20px; background-color: #FFF;'>
 											<div class='card-header' style='background-color: #FFF; margin-bottom: 20px;'>
-												<div class='card-title'>
+												<div class='card-title box-title'>
 													<div class='title'>Document Details</div>
 												</div>
+												<div class="box-tools pull-right">
+													<button type='button' class="btn btn-box-tool" data-widget="collapse" style='border: none !important; margin: 0;'><i class="fa fa-plus"></i></button>
+												</div>
 											</div>
-											<div class='card-body' style='padding-top: 0; background-color: #F0F0F0; padding-bottom: 0;'>
-												 <div class="box box-primary" style='margin-top: 20px; border-top: none'>
+											<div class='card-body box-body' style='padding-top: 0; background-color: #FFF; display: none;'>
+												<div class="box box-primary" style='margin-top: 20px; border-top: none; background-color: #F7F7F7'>
 													<div class="box-header with-border">
 														<h4 class="box-title" style='font-size: 13px; font-weight: bold;'>Products/Services</h4>
 														<div class="box-tools pull-right">
@@ -461,7 +463,7 @@
 														</table>
 													</div>
 												</div>
-												<div class="box box-primary" style='margin-top: 20px; border-top: none'>
+												<div class="box box-primary" style='margin-top: 20px; border-top: none; background-color: #F7F7F7'>
 													<div class="box-header with-border">
 														<h4 class="box-title" style='font-size: 13px; font-weight: bold;'>VAT</h4>
 														<div class="box-tools pull-right">
@@ -505,7 +507,7 @@
 														</table>
 													</div>
 												</div>
-												<div class="box box-primary" style='margin-top: 20px; border-top: none'>
+												<div class="box box-primary" style='margin-top: 20px; border-top: none; background-color: #F7F7F7'>
 													<div class="box-header with-border">
 														<h4 class="box-title" style='font-size: 13px; font-weight: bold;'>Discounts</h4>
 														<div class="box-tools pull-right">
@@ -551,7 +553,7 @@
 														</table>
 													</div>
 												</div>
-												<div class="box box-primary" style='margin-top: 20px; border-top: none'>
+												<div class="box box-primary" style='margin-top: 20px; border-top: none; background-color: #F7F7F7'>
 													<div class="box-header with-border">
 														<h4 class="box-title" style='font-size: 13px; font-weight: bold;'>Expanded Withholding Tax</h4>
 														<div class="box-tools pull-right">
@@ -592,7 +594,7 @@
 														</table>
 													</div>
 												</div>
-												<div class="box box-primary" style='margin-top: 20px; border-top: none'>
+												<div class="box box-primary" style='margin-top: 20px; border-top: none; background-color: #F7F7F7'>
 													<div class="box-header with-border">
 														<h4 class="box-title" style='font-size: 13px; font-weight: bold;'>Final Withholding Tax</h4>
 														<div class="box-tools pull-right">
@@ -633,7 +635,7 @@
 														</table>
 													</div>
 												</div>
-												<div class="box box-primary" style='margin-top: 20px; border-top: none'>
+												<div class="box box-primary" style='margin-top: 20px; border-top: none; background-color: #F7F7F7'>
 													<div class="box-header with-border">
 														<h4 class="box-title" style='font-size: 13px; font-weight: bold;'>Document Reference</h4>
 														<div class="box-tools pull-right">
@@ -676,7 +678,7 @@
 														</table>
 													</div>
 												</div>
-												<div class="box box-primary" style='margin-top: 20px; border-top: none'>
+												<div class="box box-primary" style='margin-top: 20px; border-top: none; background-color: #F7F7F7'>
 													<div class="box-header with-border">
 														<h4 class="box-title" style='font-size: 13px; font-weight: bold;'>Bank Details</h4>
 														<div class="box-tools pull-right">
@@ -729,7 +731,7 @@
 														</table>
 													</div>
 												</div>
-												<div class="box box-primary" style='margin-top: 20px; border-top: none'>
+												<div class="box box-primary" style='margin-top: 20px; border-top: none; background-color: #F7F7F7'>
 													<div class="box-header with-border">
 														<h4 class="box-title" style='font-size: 13px; font-weight: bold;'>Other Details</h4>
 														<div class="box-tools pull-right">
