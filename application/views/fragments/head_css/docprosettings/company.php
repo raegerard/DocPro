@@ -122,4 +122,12 @@
    		height: 440px;
 	}
 
+	.view-modal-body{
+		width: 100%;
+		height: 440px;
+   	    padding-right: 24px;
+   	    padding-left: 0px;
+        border-right: 1px solid #D5D5D5;
+	}
+
 </style>
