@@ -85,7 +85,6 @@
 		max-width: 100%;
 		background-color: #e8e8e8;
 		box-shadow: 10px;
-		width: 800px;
 
 	}
 
